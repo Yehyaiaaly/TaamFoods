@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="d">
+        <header>
+            <span>Food</span>Network
+        </header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Recipies</a>
+            <a href="#">Foods</a>
+        </nav>
+    </div>
+
+    <h2>Popular Foods</h2>
+    <div class="Foodss">
+        <div class="pizza"><img src="images/pizza.jpg" alt="Pizza" height="200px" width="200px">
+            <h2 id="pa">Pizza</h2>
+            <button onclick="order()">Order Now</button>
+        </div>
+        <div class="cpizza"><img src="images/Chicken-Pizza.jpg" alt="Chicken-Pizza" height="200px" width="200px">
+            <h2 id="cp">Chicken-Pizza</h2>
+            <button onclick="ord()">Order Now</button>
+        </div>
+        <div class="burger"><img src="images/burger.jpg" alt="Beef-Burger" height="200px" width="200px">
+            <h2 id="b">Burger</h2>
+            <button onclick="orde()">Order Now</button>
+        </div>
+        <div class="cburger"><img src="images/Chicken-Burger.jpg" alt="Chicken-Burger" height="200px" width="200px">
+            <h2 id="cb">Chicken-Burger</h2>
+            <button onclick="o1()">Order Now</button>
+        </div>
+    </div>
+    <div class="fd">
+        <div class="hotdog"><img src="images/hotdog.jpg" alt="hotdog" height="200px" width="200px">
+            <h2 id="h">HotDog</h2>
+            <button onclick="o2()">Order Now</button>
+        </div>
+        <div class="fet"><img src="images/Fettuccine.jpg" alt="Fettuccine" height="200px" width="200px">
+            <h2 id="f">Fettuccine</h2>
+            <button onclick="o3()">Order Now</button>
+        </div>
+        <div class="salad"><img src="images/salad.jpg" alt="salad" height="200px" width="200px">
+            <h2 id="s">Salad</h2>
+            <button onclick="o4()">Order Now</button>
+        </div>
+        <div class="coca-cola"><img src="images/coca-cola.jpg" alt="coca-cola" height="200px" width="200px">
+            <h2 id="c">Coca-Cola</h2>
+            <button onclick="o5()">Order Now</button>
+        </div>
+    </div>
+
+    <script>
+        function order() {
+            let p, cp, b, cb, f, h, s, c;
+            q = document.getElementById("pa");
+            window.alert("You have ordered a : " + q.textContent);
+        }
+        function ord() {
+            cp = document.getElementById("cp");
+            window.alert("You have ordered a : " + cp.textContent);
+        }
+
+        function orde() {
+            b = document.getElementById("b");
+            window.alert("You have ordered a : " + b.textContent);
+        }
+        function o1() {
+            cb = document.getElementById("cb");
+            window.alert("You have ordered a : " + cb.textContent);
+        }
+        function o2() {
+            h = document.getElementById("h");
+            window.alert("You have ordered a : " + h.textContent);
+
+        }
+        function o3() {
+            f = document.getElementById("f");
+            window.alert("You have ordered a : " + f.textContent);
+        }
+        function o4() {
+            s = document.getElementById("s");
+            window.alert("You have ordered a : " + s.textContent);
+        }
+
+        function o5() {
+            c = document.getElementById("c");
+            window.alert("You have ordered a : " + c.textContent);
+        }
+    </script>
+</body>
+
+</html>
